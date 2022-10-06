@@ -8,7 +8,7 @@ function Header(){
             <div className="space-x-4 tex-2xl ">
                 <Link>Home</Link>
                 <Link>About</Link>
-                <Link>Add New</Link>
+                <Link>Add New Post</Link>
             </div>
         </nav>
      );
