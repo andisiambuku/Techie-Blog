@@ -5,7 +5,7 @@ Techie Blog is a single page application created with React and Tailwind CSS. Th
 can come and share their tech stories, updates and current events.
  
 
-This application is ideal for tech newbies, experts and enthusiasts to read and share what they know about the ever-changing tech landsacpe in Africa.
+This application is ideal for tech newbies, experts and enthusiasts to read and share what they know about the ever-changing tech landscape in Africa.
 
 
 This project is a fulfillment of Moringa School's Phase2 Project Assignment. 
