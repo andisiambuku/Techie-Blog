@@ -1,15 +1,31 @@
-import Footer from "./Footer";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Footer from "./Footer";
 import Header from "./Header";
-import Home from "./Home";
+// import Home from "./Home";
+// import AddNew from "./AddNew";
+// import Article from "./Article";
 
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <Header />
-      <Home />
-      <Footer />
+      <div className="content">
+        <Routes>
+          
+        {/* <Route path="/" element={<Home />} /> */}
+        {/* <Route path="addnew/" element={<AddNew />} /> */}
+        {/* <Route path="article/:id" element={<Article />} /> */}
+        <Route path="header/" element={<Header />} />
+        {/* <Route path="footer/" element={<Footer />} /> */}
+          
+        </Routes>
+
+      </div>
     </div>
+    </BrowserRouter>
   );
 }
 
