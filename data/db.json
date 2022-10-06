@@ -1,0 +1,13 @@
+{
+    "articles":[
+        {
+            "id": "1",
+            "title":"Hello World",
+            "body":"Lorem Ipsum",
+            "author": "Andisi"
+        }
+    ]
+
+
+
+}
