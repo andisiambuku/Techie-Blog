@@ -1,36 +1,30 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About"
-// import AddNew from "./AddNew";
+import AddNew from "./AddNew";
 // import Article from "./Article";
 
 
 function App() {
   return (
-    <BrowserRouter>
-    <div className="m- 0">
+ 
+    <div className="App">
       <Header />
-      <Home />
-      <About />
-      <Footer />
-      
-      <div className="content">
         <Routes> 
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="addnew/" element={<AddNew />} /> */}
-        {/* <Route path="article/:id" element={<Article />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/addnew" element={<AddNew />} />       
         <Route path="/header" element={<Header />} />
         <Route path="/about" element={<About />} />
         <Route path="/footer" element={<Footer />} />
-          
+        {/* <Route path="article/:id" element={<Article />} /> */}
         </Routes>
 
       </div>
-    </div>
-    </BrowserRouter>
+   
+  
   );
 }
 

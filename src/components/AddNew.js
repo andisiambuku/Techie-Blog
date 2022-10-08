@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import { setInterval } from 'timers';
+import { useNavigate } from 'react-router-dom';
+
 
 function AddNew() {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('');
     const [isPending,setisPending] = useState(false);
-    const history = useHistory();
+    const navigate = useNavigate();
 
-    const handleSumbit = (e) =>  {
+    const handleSubmit = (e) =>  {
         e.preventDefault();
         const article ={ title, body, author };
         setisPending(true);
 
         fetch('http://localhost:8000/articles',{
             method:'POST',
-            heders:{"Content-Type":"aplication/json"},
+            heders:{"Content-Type":"application/json"},
             body: JSON.stringify(article)
         }).then(()=>{
             setisPending(false);
-            history.push('/');
+            navigate.push('/');
         })
     } 
     
@@ -48,6 +48,8 @@ function AddNew() {
                     value={author}
                     onChange={(e)=>setAuthor(e.target.value)} 
                 />
+                {!isPending && <button>Add Blog</button>}
+                {isPending && <button disabled>Adding Blog</button>}
             </form>
 
         </div>

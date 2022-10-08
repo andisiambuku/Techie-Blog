@@ -30,7 +30,7 @@ const useFetch=(url)=>{
                 }
             })
         },5);
-        return () => AbortController.abort();
+        return () => abortControl.abort();
     },[url]);
 
     return { data,isPending,error };
