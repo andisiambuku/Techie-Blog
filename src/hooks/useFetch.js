@@ -22,7 +22,7 @@ const useFetch=(url)=>{
             })
             .catch((err)=>{
                 if(err.name==='AbortError'){
-                    console.log('Fetch abortrd');
+                    console.log('Fetch aborted');
                 }
                 else{
                     setError(err.message);

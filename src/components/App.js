@@ -5,7 +5,7 @@ import Header from "./Header";
 import Home from "./Home";
 import About from "./About"
 import AddNew from "./AddNew";
-// import Article from "./Article";
+import Article from "./Article";
 
 
 function App() {
@@ -14,12 +14,12 @@ function App() {
     <div className="App">
       <Header />
         <Routes> 
-        <Route path="/" element={<Home />} />
-        <Route path="/addnew" element={<AddNew />} />       
-        <Route path="/header" element={<Header />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/footer" element={<Footer />} />
-        {/* <Route path="article/:id" element={<Article />} /> */}
+          <Route path="/" element={<Home />} />
+          <Route path="/addnew" element={<AddNew />} />       
+          <Route path="/header" element={<Header />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/footer" element={<Footer />} />
+          <Route path="article/:id" element={<Article />} />
         </Routes>
 
       </div>

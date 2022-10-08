@@ -1,18 +1,18 @@
 import React from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 
 
 function Article() {
     const { id } = useParams();
-    const { data: blog,error,isPending } = useFetch('http://localhost:8000/articles/' +id);
-    const history = useHistory();
+    const { data: article,error,isPending } = useFetch('http://localhost:8000/articles/' +id);
+    const navigate = useNavigate();
 
     const handleClick = () =>{
         fetch('http://localhost:8000/articles/' + article.id,{
             method:'DELETE'
         }).then(() => {
-            history.push('/');
+            navigate.push('/');
         })
     }
     return(
