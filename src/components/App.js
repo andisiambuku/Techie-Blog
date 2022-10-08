@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
-// import Home from "./Home";
+import Home from "./Home";
+import About from "./About"
 // import AddNew from "./AddNew";
 // import Article from "./Article";
 
@@ -12,13 +13,17 @@ function App() {
     <BrowserRouter>
     <div className="m- 0">
       <Header />
+      <Home />
+      <About />
       <Footer />
+      
       <div className="content">
         <Routes> 
         {/* <Route path="/" element={<Home />} /> */}
         {/* <Route path="addnew/" element={<AddNew />} /> */}
         {/* <Route path="article/:id" element={<Article />} /> */}
         <Route path="/header" element={<Header />} />
+        <Route path="/about" element={<About />} />
         <Route path="/footer" element={<Footer />} />
           
         </Routes>
