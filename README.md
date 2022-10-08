@@ -8,7 +8,7 @@ can come and share their tech stories, updates and current events.
 This application is ideal for tech newbies, experts and enthusiasts to read and share what they know about the ever-changing tech landscape in Africa.
 
 
-This project is a fulfillment of Moringa School's Phase2 Project Assignment. 
+This project is a fulfillment of Moringa School's Phase 2 Project Assignment. 
  
 ## Link to Live Site on GitHub Pages 
 Take a look at it here:
@@ -19,15 +19,15 @@ Before you begin, ensure you have met the following requirements:
 
 Git must be installed on your operating system.
 Run Locally
-To run Koin Korner locally, run this command on your git bash:
+To run this project locally, run this command on your git bash:
 
 #### Linux and macOS:
 
-git clone https://github.com/andisiambuku/Koin-Korner.git 
+git clone https://github.com/andisiambuku/Techie-Blog.git 
 
 #### Windows:
 
-git clone https://github.com/andisiambuku/Koin-Korner.git 
+git clone https://github.com/andisiambuku/Techie-Blog.git 
 
 ## Copyright and License Information
 This project is free to use and does not contains any license.
