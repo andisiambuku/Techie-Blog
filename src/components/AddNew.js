@@ -14,7 +14,7 @@ function AddNew() {
         const article ={ title, body, author };
         setisPending(true);
 
-        fetch('http://localhost:8000/articles',{
+        fetch('http://localhost:3000/articles',{
             method:'POST',
             heders:{"Content-Type":"application/json"},
             body: JSON.stringify(article)
