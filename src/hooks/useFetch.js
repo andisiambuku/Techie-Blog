@@ -6,9 +6,9 @@ const useFetch=(url)=>{
     const [error, setError] = useState(null);
 
     useEffect(()=>{
-        const abortControl = new AbortController();
-        setTimeout(()=>{
-            fetch(url,{ signal:abortControl.signal })
+        
+       
+            fetch(url)
             .then(res =>{
                 if(!res.ok){
                     throw Error('Oops! cant find that resource');
@@ -28,12 +28,11 @@ const useFetch=(url)=>{
                     setError(err.message);
                     setIsPending(false);
                 }
-            })
-        },5);
-        return () => abortControl.abort();
+        })
+        
     },[url]);
 
-    return { data,isPending,error };
+    return { data, isPending, error };
 
 }
 
