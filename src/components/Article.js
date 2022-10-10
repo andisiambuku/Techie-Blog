@@ -5,11 +5,15 @@ import useFetch from '../hooks/useFetch';
 
 function Article() {
     const { id } = useParams();
-    const { data: article,error,isPending } = useFetch('http://localhost:3000/articles/' +id);
+    const { data: article,error,isPending } = useFetch(`http://localhost:3004/articles/${id}`);
     const navigate = useNavigate();
+    console.log(id)
+    console.log(article)
+    console.log(error)
+
 
     const handleClick = () =>{
-        fetch('http://localhost:3000/articles/' + article.id,{
+        fetch('http://localhost:3004/articles/' + article.id,{
             method:'DELETE'
         }).then(() => {
             navigate.push('/');
