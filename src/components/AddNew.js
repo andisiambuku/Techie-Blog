@@ -30,30 +30,33 @@ function AddNew() {
     } 
     
     return(
-        <div className="create">
-            <h2>Add a New Post</h2>
-            <form onSubmit={handleSubmit}>
-                <label>Article Title</label>
-                    <input 
+        <div className="p-8">
+            <h2 className='text-3xl text-gray-600 font-bold'>Add a New Post</h2>
+            <form className='p-4 flex flex-col' onSubmit={handleSubmit}>
+                <label className='pb-4 mt-4'>Article Title:</label>
+                    <input className='p-2 border border-solid border-gray-300'
                     type="text"
                     required
                     value={title}
+                    placeholder="Add a title"
                     onChange={(e)=>setTitle(e.target.value)}                    
                     />
-                <label>Article Body: </label>
-                <textarea 
+                    <label className='pb-4 mt-4'>Article Author:</label>
+                    <input className='p-2 border border-solid border-gray-300 '
+                    type="text"
+                    required
+                    value={author}
+                    placeholder="Add your name"
+                    onChange={(e)=>setAuthor(e.target.value)} 
+                />
+                <label className='mt-4 pb-4'>Article Body: </label>
+                <textarea className='py-10 border border-solid border-gray-300'
                     required
                     value={body}
                     onChange={(e) => setBody(e.target.value)}
                 />
-                <label>Article Author:</label>
-                    <input 
-                    type="text"
-                    required
-                    value={author}
-                    onChange={(e)=>setAuthor(e.target.value)} 
-                />
-                {!isPending && <button>Add Blog</button>}
+                
+                {!isPending && <button className='mx-80 p-2 mt-6 border border-gray-400 rounded-full text-gray-600'>Add Blog</button>}
                 {isPending && <button disabled>Adding Blog</button>}
             </form>
 

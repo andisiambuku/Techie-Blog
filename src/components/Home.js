@@ -9,7 +9,10 @@ function Home(){
         <div className="home">
             { error && <div>{error}</div>}
             { isPending && <div>Loading...</div>}
-            <ArticleList articles={articles} title="All Posts"/>
+            <div>
+                <h2 className="text-center mt-4 text-4xl text-gray-600 font-bold">All Posts</h2>
+            <ArticleList  articles={articles} />
+            </div>
         </div>
     );
 
