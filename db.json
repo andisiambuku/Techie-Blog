@@ -1,28 +1,19 @@
 {
-    "articles":[
-        {
-            "id": "1",
-            "title":"Hello World",
-            "body":"Fruit firmament make his of Also life living. From. May together. His i rule so yielding. Fruitful. Without without, fowl fish replenish one our seed sixth. Made, blessed place bring. And sixth good one seas it so. Saw bring was moveth them our lesser given days herb of multiply. Seasons can't. Hath don't midst saying tree fruitful. Appear shall fly. Void. Divide day shall heaven years lights replenish fish fill thing stars firmament and after spirit and fly sea stars divide creeping waters third cattle stars signs together replenish called divided created sixth evening you're. It multiply may beast, wherein.",
-            "author": "Roseland"
-        },
-        {
-            "id": "2",
-            "title":"This is a heading",
-            "body":"Fruit firmament make his of Also life living. From. May together. His i rule so yielding. Fruitful. Without without, fowl fish replenish one our seed sixth. Made, blessed place bring. And sixth good one seas it so. Saw bring was moveth them our lesser given days herb of multiply. Seasons can't. Hath don't midst saying tree fruitful. Appear shall fly. Void. Divide day shall heaven years lights replenish fish fill thing stars firmament and after spirit and fly sea stars divide creeping waters third cattle stars signs together replenish called divided created sixth evening you're. It multiply may beast, wherein.",
-            "author": "Andisi"
-        },
-        {
-            "id": "3",
-            "title":"This is also a heading",
-            "body":"Fruit firmament make his of Also life living. From. May together. His i rule so yielding. Fruitful. Without without, fowl fish replenish one our seed sixth. Made, blessed place bring. And sixth good one seas it so. Saw bring was moveth them our lesser given days herb of multiply. Seasons can't. Hath don't midst saying tree fruitful. Appear shall fly. Void. Divide day shall heaven years lights replenish fish fill thing stars firmament and after spirit and fly sea stars divide creeping waters third cattle stars signs together replenish called divided created sixth evening you're. It multiply may beast, wherein.",
-            "author": "Ambuku"
-        }
-
-
-
-    ]
-
-
-
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

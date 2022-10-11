@@ -14,13 +14,18 @@ function AddNew() {
         const article ={ title, body, author };
         setisPending(true);
 
-        fetch('http://localhost:3004/articles',{
+        fetch('http://localhost:3001/articles',{
             method:'POST',
-            heders:{"Content-Type":"application/json"},
+            headers:{"Content-Type":"application/json"},
             body: JSON.stringify(article)
-        }).then(()=>{
+        })
+        .then((res)=> res.json())
+        .then(()=>{
+            setAuthor('');
+            setBody('');
+            setTitle('');
             setisPending(false);
-            navigate.push('/');
+            navigate('/');
         })
     } 
     

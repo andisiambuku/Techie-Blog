@@ -1,11 +1,12 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
+import ArticleList from './ArticleList';
 
 
 function Article() {
     const { id } = useParams();
-    const { data: article,error,isPending } = useFetch(`http://localhost:3004/articles/${id}`);
+    const { data: article,error,isPending } = useFetch(`http://localhost:3001/articles/${id}`);
     const navigate = useNavigate();
     console.log(id)
     console.log(article)
@@ -13,10 +14,10 @@ function Article() {
 
 
     const handleClick = () =>{
-        fetch('http://localhost:3004/articles/' + article.id,{
+        fetch('http://localhost:3001/articles/' + article.id,{
             method:'DELETE'
         }).then(() => {
-            navigate.push('/');
+            navigate('/');
         })
     }
     return(
@@ -24,7 +25,7 @@ function Article() {
             {isPending && <div>Loading...</div>}
             {error && <div>{error}</div>}
             <article>
-                <h2>{article.title}</h2>
+                <h2>{ArticleList.title}</h2>
                 <p>Written by {article.author}</p>
                 <div>{article.body}</div>
                 <button onClick={handleClick}>Delete</button>
