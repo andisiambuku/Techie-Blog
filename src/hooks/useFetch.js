@@ -8,7 +8,7 @@ const useFetch=(url)=>{
 
     useEffect(()=>{
        
-            fetch('http://localhost:3001/articles/')
+            fetch(url)
             .then((res) =>  res.json())
             .then((data) =>{
                 

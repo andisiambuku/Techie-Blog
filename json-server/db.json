@@ -23,18 +23,6 @@
       "body": "Besides added capability, using outside resources allows us to make data accessible to all instances of our web app. For example, if we want to keep track of user data for logins, by putting this data in a database in the cloud, all instances of our web app can access it from the client side.",
       "author": "Wayne",
       "id": "5F7WSLE"
-    },
-    {
-      "body": "",
-      "title": "",
-      "author": "",
-      "id": "B_rWSqd"
-    },
-    {
-      "body": "",
-      "title": "",
-      "author": "",
-      "id": "L5nMe8U"
     }
   ]
 }

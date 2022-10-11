@@ -14,8 +14,9 @@ function Article() {
     console.log(error)
 
 
-    const handleClick = async (id) =>{
-        await fetch('http://localhost:3001/articles/' + article.id,{
+    const handleClick = () =>{
+        console.log(id)
+        fetch('http://localhost:3001/articles/' + id,{
             method:'DELETE'
         })
         .then((res)=> res.json())
