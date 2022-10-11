@@ -11,8 +11,7 @@ This application is ideal for tech newbies, experts and enthusiasts to read and 
 This project is a fulfillment of Moringa School's Phase 2 Project Assignment. 
  
 ## Link to Live Site on GitHub Pages 
-Take a look at it here:
-<coming in a minute>
+Take a look at it here: https://techie-blog1.herokuapp.com/
 
 
 ## Prerequisites
