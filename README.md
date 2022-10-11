@@ -12,7 +12,7 @@ This project is a fulfillment of Moringa School's Phase 2 Project Assignment.
  
 ## Link to Live Site on GitHub Pages 
 Take a look at it here:
-https://6341eb4e9a2db31094d9dc73--clever-bombolone-a8f43a.netlify.app/
+<coming in a minute>
 
 
 ## Prerequisites
